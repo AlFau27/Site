@@ -195,6 +195,17 @@ footer{background:var(--encre);color:rgba(242,237,227,.25);text-align:center;pad
 .lb-nav button{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(242,237,227,.45);background:none;border:1px solid rgba(242,237,227,.15);padding:.45rem 1.1rem;cursor:pointer;transition:.2s;}
 .lb-nav button:hover{color:#fff;border-color:rgba(242,237,227,.5);}
 
+/* PRESSE */
+.presse-band{border-top:1px solid var(--bord);margin-top:3.5rem;padding-top:2.5rem;}
+.presse-label{font-size:.55rem;letter-spacing:.45em;text-transform:uppercase;color:var(--fumee);text-align:center;margin-bottom:2rem;}
+.presse-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+.presse-item{padding:1.2rem 1.5rem;border-left:1px solid var(--bord);text-decoration:none;transition:background .2s;}
+.presse-item:first-child{border-left:none;}
+.presse-item:hover{background:rgba(139,42,42,.04);}
+.presse-media{font-size:.5rem;letter-spacing:.28em;text-transform:uppercase;color:var(--or);display:block;margin-bottom:.3rem;}
+.presse-annee{font-size:.5rem;letter-spacing:.15em;color:var(--fumee);display:block;margin-bottom:.6rem;}
+.presse-titre{font-family:var(--gara);font-style:italic;font-size:.9rem;color:var(--encre);line-height:1.5;}
+
 @media(max-width:820px){
   nav{padding:.8rem 1.5rem;} .nav-links{gap:1.2rem;}
   .hero{grid-template-columns:1fr;height:auto;}
@@ -209,6 +220,11 @@ footer{background:var(--encre);color:rgba(242,237,227,.25);text-align:center;pad
   .contact-photo::after{background:linear-gradient(to bottom,transparent 50%,var(--papier) 100%);}
   .contact-body{padding:3rem 1.8rem;}
   .conf-grid{grid-template-columns:1fr;} .conf-year{font-size:3rem;}
+  .presse-grid{grid-template-columns:1fr 1fr;}
+  .presse-item{border-left:none;border-top:1px solid var(--bord);}
+}
+@media(max-width:500px){
+  .presse-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -262,6 +278,34 @@ footer{background:var(--encre);color:rgba(242,237,227,.25);text-align:center;pad
       <a href="https://www.leslibraires.ca/livres/de-l-or-et-des-putes-9782924031155" class="btn">Commander le livre</a>
     </div>
   </div>
+
+  <!-- Bande de presse -->
+  <div class="presse-band">
+    <div class="presse-label">★ &nbsp; Dans les médias &nbsp; ★</div>
+    <div class="presse-grid">
+      <a href="https://action-nationale.qc.ca/alexandre-faucher-de-l-or-et-des-putes/" target="_blank" class="presse-item">
+        <span class="presse-media">Action nationale</span>
+        <span class="presse-annee">2024</span>
+        <span class="presse-titre">De l'or et des putes</span>
+      </a>
+      <a href="https://www.journaldemontreal.com/2014/10/25/les-prostitues-arrivaient-par-train-a-putainville" target="_blank" class="presse-item">
+        <span class="presse-media">Journal de Montréal</span>
+        <span class="presse-annee">2014</span>
+        <span class="presse-titre">Les prostituées arrivaient par train à Putainville</span>
+      </a>
+      <a href="https://ici.radio-canada.ca/nouvelle/688290/histoire-roc-or-malartic-putainville-abitibi-mine-alcool-debit-prostitution" target="_blank" class="presse-item">
+        <span class="presse-media">Radio-Canada</span>
+        <span class="presse-annee">2014</span>
+        <span class="presse-titre">Histoire de Roc-d'Or, Malartic et Putainville en Abitibi</span>
+      </a>
+      <a href="https://www.journaldemontreal.com/2024/10/06/lhistoire-du-sodome-et-gomorrhe-quebecois-un-village-constitue-de-bars-de-bordels-et-de-maisons-de-jeux-apparu-en-1936" target="_blank" class="presse-item">
+        <span class="presse-media">Journal de Montréal</span>
+        <span class="presse-annee">2024</span>
+        <span class="presse-titre">L'histoire du Sodome et Gomorrhe québécois</span>
+      </a>
+    </div>
+  </div>
+
 </div>
 
 <!-- FULLBAND -->
